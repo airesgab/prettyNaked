@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --coral: #FFBBCC;
+    --peach: #FFCCCC;
+    --litepeach: #FFDDCC;
+    --cream: #fcf1da;
+    --ivory: #fffaf4;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html{
+    font-family: 'quicksand';
+    background-color: var(--ivory);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img2{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    left: 1px;
+}
+
+
+.title{
+    flex-direction: column  ;
+    margin-top: 20px;
+}
+
+.watertitle, .proteintitle, .workout-title{
+    margin-top: 10px;
+}
+
+select{
+    font-family: 'montserrat';
+    color: black;
+}
+
+.water-input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 20px;
+}
+
+
+.num{
+    width: 70px;
+    margin: 0 10px 0 10px;
+    font-weight: 700;
+}
+
+.minus, 
+.num, 
+.plus, 
+.water-input, 
+.water-wrap,
+.proteinwrap,
+.sets-wrap, 
+p, 
+.select, 
+.splash,
+.title,
+.reset,
+.proteinfield,
+.circle,
+.inp,
+.grams,
+.wtrfield,
+.input-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.select{
+    font-family: 'quicksand';
+    outline: none;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--litepeach);
+    text-align-last: center;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.chk{
+    margin-top: 20px;
+}
+
+.addbtn, .proteinbtn, .waterbtn{
+    border: none;
+    background-color: var(--litepeach);
+    padding: 8px;
+    border-radius: 50px;
+    width: 70px;
+    margin-top: 10px;
+    font-family: 'quicksand';
+    cursor: pointer;
+    color: black;
+    margin: 20px;
+}
+
+.waterbtn{
+    background-color: var(--peach);
+}
+
+.resetbtn{
+    border: none;
+    background-color: var(--peach);
+    padding: 8px;
+    margin: 10px;
+    border-radius: 50px;
+    width: 100px;
+    font-family: 'quicksand';
+}
+
+.input-type, .wtrfield, .proteinfield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.ty, .inp, .grams, .ml{
+    border-radius: 50px;
+    border: 1px solid grey ;
+    height: 20px;
+    text-align-last: center;
+    display: flex;
+    justify-content: center;
+}
+
+.confirmbtn, .confirm-protein, .confirm-wtr{
+    
+    border: none;
+    padding: 8px;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.confirm-wtr{
+    background-color: var(--peach);
+}
+
+.grams{
+    margin: 10px;
+}
+
+.list, .wtrlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li{
+    list-style-type:none;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 50px;
+    background-color: white;
+    margin: 10px 0 10px 0;
+    box-shadow: rgba(1, 30, 61, 0.05) 0px 4px 4px;
+    cursor: pointer;
+}
+
+.confirmbtn{
+    background-color: var(--litepeach);
+    cursor: pointer;
+}
+
+.confirm-protein{
+    background-color: var(--litepeach);
+    cursor: pointer;
+}
+
+.newdiv{
+    margin-bottom: 20px;
+    color: var(--neon)
+}
+
+.sets-wrap, .water-wrap, .proteinwrap{
+    z-index: -100;
+    border-radius: 20px;
+    box-shadow: rgba(1, 30, 61, 0.1) 0px 4px 12px;
+    margin: 10px 0 20px 0;
+    padding: 15px 20px 0 20px;
+    width: 250px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sets-wrap{
+    background-color: var(--peach);
+}
+
+.water-wrap{
+    background-color: var(--litepeach);
+}
+
+.proteinwrap{
+    background-color: var(--cream);
+}
+
+.bottles, .proteintag{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.wtr {
+    border: 5px solid var(--coral);
+}
+
+.prt{
+    border: 5px solid var(--peach);
+}
+
+.intake{
+    font-weight: 700;
+}
+
+label{
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+input:checked+label {
+    text-decoration: line-through;
+  }
+
+.splash{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background-color: var(--ivory);
+    top: 0;
+    left: 0;
+}
+
+.splash.display-none{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    opacity: 0;
+    background-color: var(--ivory);
+    top: 0;
+    transition: all 1s;
+}
+
+.pretty {
+    font-family: sniglet;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--litepeach);
+    -webkit-text-stroke: 3px var(--coral);
+    position: fixed;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    width: 20%; 
+    z-index: 200;
+}
+
+.pretty.display-none {
+    color: #eff6ff;
+    font-family: sniglet;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--litepeach);
+    -webkit-text-stroke: 3px var(--coral);
+    position: fixed;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    width: 20%; 
+    z-index: -10;
+    opacity: 0;
+
+    transition: all 1s;
+}
+
+img{
+    width: 300px;
+    position: relative;
+    top: -15%;
+    right: 15px;
+    z-index: 200;
+   
+}
+
+img.display-none{
+    width: 300px;
+    position: relative;
+    top: -10%;
+    right: 15px;
+    opacity: 0;
+    z-index: -10;
+
+    transition: all 1s;
+}
+
+
+@media only screen 
+and (min-width : 350px) 
+and (max-width : 420px) {
+
+    .title{
+        margin-top: 20px;
+    }
+    .pretty {
+        color: #eff6ff;
+        font-family: sniglet;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: 700;
+        color: var(--litepeach);
+        -webkit-text-stroke: 3px var(--coral);
+        display: flex;
+        justify-content: center;
+        top: 60%;
+        
+    }
+
+    img {
+        position: relative;
+        right: 10px;
+        width: 250px;
+    }
+
+    .img2{
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+    }
+}
+
+
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+body{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
